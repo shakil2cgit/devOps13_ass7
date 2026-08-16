@@ -1,0 +1,13 @@
+{
+  "name": "ssc-result-publishing-app",
+  "version": "1.0.0",
+  "description": "Scalable SSC Result Publishing Infrastructure (AWS Practical Assignment 7)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Ready for AWS deployment\""
+  },
+  "keywords": ["aws", "devops", "alb", "autoscaling", "ssc-result"],
+  "author": "DevOps Engineer",
+  "license": "ISC"
+}

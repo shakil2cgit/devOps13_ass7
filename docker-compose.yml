@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  ssc-app-az1:
+    build: .
+    container_name: ssc-node-az1
+    ports:
+      - "8081:80"
+    environment:
+      - NODE_ENV=production
+
+  ssc-app-az2:
+    build: .
+    container_name: ssc-node-az2
+    ports:
+      - "8082:80"
+    environment:
+      - NODE_ENV=production

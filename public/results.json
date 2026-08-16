@@ -1,0 +1,98 @@
+[
+  {
+    "roll": "100201",
+    "reg": "1512345678",
+    "board": "Dhaka",
+    "year": "2026",
+    "exam": "SSC",
+    "name": "Tanvir Ahmed",
+    "father": "Rafiqul Islam",
+    "mother": "Nasima Begum",
+    "school": "Dhaka Residential Model College",
+    "group": "Science",
+    "gpa": "5.00",
+    "result": "PASSED (Golden A+)",
+    "subjects": [
+      { "code": "101", "name": "Bangla", "grade": "A+", "point": "5.0" },
+      { "code": "107", "name": "English", "grade": "A+", "point": "5.0" },
+      { "code": "109", "name": "Mathematics", "grade": "A+", "point": "5.0" },
+      { "code": "136", "name": "Physics", "grade": "A+", "point": "5.0" },
+      { "code": "137", "name": "Chemistry", "grade": "A+", "point": "5.0" },
+      { "code": "138", "name": "Biology", "grade": "A+", "point": "5.0" },
+      { "code": "154", "name": "ICT", "grade": "A+", "point": "5.0" },
+      { "code": "126", "name": "Higher Mathematics (4th)", "grade": "A+", "point": "5.0" }
+    ]
+  },
+  {
+    "roll": "100202",
+    "reg": "1512345679",
+    "board": "Dhaka",
+    "year": "2026",
+    "exam": "SSC",
+    "name": "Nusrat Jahan",
+    "father": "Anwar Hossain",
+    "mother": "Fatema Khatun",
+    "school": "Viqarunnisa Noon School & College",
+    "group": "Science",
+    "gpa": "4.89",
+    "result": "PASSED",
+    "subjects": [
+      { "code": "101", "name": "Bangla", "grade": "A+", "point": "5.0" },
+      { "code": "107", "name": "English", "grade": "A", "point": "4.0" },
+      { "code": "109", "name": "Mathematics", "grade": "A+", "point": "5.0" },
+      { "code": "136", "name": "Physics", "grade": "A+", "point": "5.0" },
+      { "code": "137", "name": "Chemistry", "grade": "A+", "point": "5.0" },
+      { "code": "138", "name": "Biology", "grade": "A", "point": "4.0" },
+      { "code": "154", "name": "ICT", "grade": "A+", "point": "5.0" },
+      { "code": "126", "name": "Higher Mathematics (4th)", "grade": "A+", "point": "5.0" }
+    ]
+  },
+  {
+    "roll": "200301",
+    "reg": "1613456789",
+    "board": "Chittagong",
+    "year": "2026",
+    "exam": "SSC",
+    "name": "Rashed Chowdhury",
+    "father": "Mahbubur Rahman",
+    "mother": "Shirin Akter",
+    "school": "Chittagong Collegiate School",
+    "group": "Business Studies",
+    "gpa": "4.75",
+    "result": "PASSED",
+    "subjects": [
+      { "code": "101", "name": "Bangla", "grade": "A+", "point": "5.0" },
+      { "code": "107", "name": "English", "grade": "A", "point": "4.0" },
+      { "code": "109", "name": "Mathematics", "grade": "A+", "point": "5.0" },
+      { "code": "146", "name": "Accounting", "grade": "A+", "point": "5.0" },
+      { "code": "147", "name": "Business Ent.", "grade": "A", "point": "4.0" },
+      { "code": "148", "name": "Finance & Banking", "grade": "A+", "point": "5.0" },
+      { "code": "154", "name": "ICT", "grade": "A+", "point": "5.0" },
+      { "code": "141", "name": "General Science (4th)", "grade": "A+", "point": "5.0" }
+    ]
+  },
+  {
+    "roll": "300401",
+    "reg": "1714567890",
+    "board": "Rajshahi",
+    "year": "2026",
+    "exam": "SSC",
+    "name": "Sumaiya Akter",
+    "father": "Mokhlesur Rahman",
+    "mother": "Rokeya Begum",
+    "school": "Rajshahi Government Girls' High School",
+    "group": "Humanities",
+    "gpa": "5.00",
+    "result": "PASSED (Golden A+)",
+    "subjects": [
+      { "code": "101", "name": "Bangla", "grade": "A+", "point": "5.0" },
+      { "code": "107", "name": "English", "grade": "A+", "point": "5.0" },
+      { "code": "109", "name": "Mathematics", "grade": "A+", "point": "5.0" },
+      { "code": "127", "name": "History of Bangladesh", "grade": "A+", "point": "5.0" },
+      { "code": "128", "name": "Geography & Env.", "grade": "A+", "point": "5.0" },
+      { "code": "129", "name": "Civics & Citizenship", "grade": "A+", "point": "5.0" },
+      { "code": "154", "name": "ICT", "grade": "A+", "point": "5.0" },
+      { "code": "141", "name": "Economics (4th)", "grade": "A+", "point": "5.0" }
+    ]
+  }
+]

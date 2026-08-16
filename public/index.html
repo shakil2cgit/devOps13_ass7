@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministry of Education - SSC Result 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+</head>
+<body>
+
+<div class="container">
+  <!-- Header Banner -->
+  <header class="header-banner">
+    <h1>
+      <span>🎓</span>
+      Ministry of Education - SSC Result 2026
+    </h1>
+    <p>Intermediate and Secondary Education Boards Bangladesh • High-Traffic Scalable Cloud Node</p>
+  </header>
+
+  <!-- AWS Live Server Diagnostics Card (Fulfills ass7: Server Info & Availability Zone) -->
+  <section class="instance-card" id="server-diagnostics">
+    <div class="meta-item">
+      <span class="meta-label">Cloud Instance ID</span>
+      <span class="meta-value" id="disp-instance-id">i-0a89d12ef4b931a7c</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Availability Zone</span>
+      <span class="meta-value az-tag" id="disp-az">us-east-1a</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Private IPv4</span>
+      <span class="meta-value ip-tag" id="disp-private-ip">10.0.3.45</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">ALB Request Hits</span>
+      <span class="meta-value" id="disp-request-count">#1</span>
+    </div>
+    <div>
+      <div class="pulse-badge" id="health-badge">
+        <span class="pulse-dot"></span>
+        <span id="health-text">ALB Target Healthy (200 OK)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Grid -->
+  <main class="main-grid">
+    <!-- Left Column: Search Form -->
+    <div class="card">
+      <h2 class="card-title">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 1114 0z"></path></svg>
+        Search Result
+      </h2>
+      
+      <form id="result-form">
+        <div class="form-group">
+          <label for="exam">Examination</label>
+          <select id="exam" class="form-control" required>
+            <option value="SSC" selected>SSC/Dakhil/Equivalent</option>
+            <option value="JSC">JSC/JDC</option>
+            <option value="HSC">HSC/Alim</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year</label>
+          <select id="year" class="form-control" required>
+            <option value="2026" selected>2026</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="board">Board</label>
+          <select id="board" class="form-control" required>
+            <option value="Dhaka" selected>Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Comilla">Comilla</option>
+            <option value="Jessore">Jessore</option>
+            <option value="Dinajpur">Dinajpur</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Madrasah">Madrasah</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="roll">Roll Number</label>
+          <input type="text" id="roll" class="form-control" placeholder="e.g. 100201" value="100201" required>
+        </div>
+
+        <div class="form-group">
+          <label for="reg">Registration No</label>
+          <input type="text" id="reg" class="form-control" placeholder="e.g. 1512345678" value="1512345678" required>
+        </div>
+
+        <div class="form-group">
+          <label id="captcha-label" for="captcha-input">Verification: 4 + 7 = ?</label>
+          <input type="number" id="captcha-input" class="form-control" placeholder="Enter sum" required>
+        </div>
+
+        <div class="btn-row">
+          <button type="submit" class="btn btn-primary" id="btn-submit">
+            Get Result
+          </button>
+          <button type="button" class="btn btn-secondary" id="btn-reset">
+            Reset
+          </button>
+        </div>
+      </form>
+
+      <div class="sample-hints">
+        <strong>💡 Sample Search Data:</strong><br>
+        • Dhaka: Roll <span class="sample-chip" onclick="fillForm('100201','1512345678','Dhaka')">100201 (GPA 5.00)</span> or <span class="sample-chip" onclick="fillForm('100202','1512345679','Dhaka')">100202</span><br>
+        • Chittagong: Roll <span class="sample-chip" onclick="fillForm('200301','1613456789','Chittagong')">200301</span><br>
+        • Rajshahi: Roll <span class="sample-chip" onclick="fillForm('300401','1714567890','Rajshahi')">300401</span>
+      </div>
+    </div>
+
+    <!-- Right Column: Result Marksheet -->
+    <div class="card result-display" id="result-container">
+      <div class="empty-state" id="empty-state">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        <h3>No Result Displayed</h3>
+        <p>Please enter your Roll & Registration number and click "Get Result".</p>
+      </div>
+
+      <div id="result-content" style="display: none;">
+        <h2 class="card-title">
+          <span>📜</span> Official Marksheet & Grade Report
+        </h2>
+
+        <div class="gpa-badge">
+          <div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; opacity: 0.9;">Overall Performance</div>
+            <strong id="res-status" style="font-size: 1.1rem;">PASSED</strong>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-size: 0.8rem; opacity: 0.9;">GRADE POINT AVERAGE</div>
+            <div class="score" id="res-gpa">5.00</div>
+          </div>
+        </div>
+
+        <div class="student-meta">
+          <div class="student-meta-item"><strong>Student Name:</strong> <span id="res-name">Tanvir Ahmed</span></div>
+          <div class="student-meta-item"><strong>Father's Name:</strong> <span id="res-father">Rafiqul Islam</span></div>
+          <div class="student-meta-item"><strong>Mother's Name:</strong> <span id="res-mother">Nasima Begum</span></div>
+          <div class="student-meta-item"><strong>Institution:</strong> <span id="res-school">Dhaka Residential Model College</span></div>
+          <div class="student-meta-item"><strong>Roll / Reg:</strong> <span id="res-roll-reg">100201 / 1512345678</span></div>
+          <div class="student-meta-item"><strong>Board & Group:</strong> <span id="res-board-group">Dhaka / Science</span></div>
+        </div>
+
+        <h4 style="margin-top: 12px; font-size: 0.95rem; color: #1e293b;">Subject-wise Grade Sheet:</h4>
+        <div class="table-responsive">
+          <table class="marks-table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Subject Name</th>
+                <th>Grade</th>
+                <th>Grade Point</th>
+              </tr>
+            </thead>
+            <tbody id="res-subjects-body">
+              <!-- Dynamically Populated -->
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top: 16px; text-align: right;">
+          <button class="btn btn-secondary" onclick="window.print()" style="padding: 6px 14px; font-size: 0.85rem;">
+            🖨️ Print Marksheet
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- DevOps & Assignment Verification Tools Panel -->
+  <section class="devops-panel">
+    <div class="devops-header">
+      <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+      DevOps Assignment Validation Tools (ALB & Auto Scaling)
+    </div>
+    <div class="devops-actions">
+      <button class="btn-devops" id="btn-refresh-server" onclick="refreshServerInfo()">
+        🔄 Check ALB Round-Robin (Refresh Node)
+      </button>
+      <button class="btn-devops warning" id="btn-stress-cpu" onclick="triggerCpuStress()">
+        ⚡ Simulate High Traffic (CPU Load for Scale-Out)
+      </button>
+      <button class="btn-devops danger" id="btn-toggle-health" onclick="toggleServerHealth()">
+        ⚠️ Simulate Unhealthy Node (ALB Target Removal)
+      </button>
+      <a href="/health" target="_blank" class="btn-devops" style="text-decoration: none;">
+        🩺 View /health Endpoint
+      </a>
+    </div>
+    <div id="devops-msg" style="margin-top: 10px; font-size: 0.82rem; color: #64748b;"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2026 Board of Intermediate and Secondary Education, Bangladesh. All rights reserved.<br>
+    Cloud-native High-Availability Auto Scaling Deployment • Scalable to 10+ EC2 Targets.
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
